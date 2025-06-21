@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Aswin Cruzo</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="contact-style.css" />
+</head>
+
+<body style="overflow: hidden;" onload="setTimeout(() => document.body.style.overflow = 'auto', 1500)">
+
+  <!-- Navbar -->
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-button">HOME</a>
+    <a href="education.html" class="nav-button">EDUCATION</a>
+    <a href="skills.html" class="nav-button">SKILLS</a>
+    <a href="" class="nav-button">PROJECTS</a>
+    <a href="contact.html" class="nav-button active">CONTACT</a>
+  </div>
+
+  <!-- Heading -->
+  <h1>Contact Me</h1>
+
+  <!-- Contact Section -->
+  <div class="container">
+    <!-- Contact Info -->
+    <div class="contact-info" data-aos="fade-right">
+      <h3>Get in Touch</h3>
+      <div class="info-item"><span>📍 Address:</span> Palakkad, Kerala, India</div>
+      <div class="info-item"><span>📞 Phone:</span> +91 98765 43210</div>
+      <div class="info-item"><span>📧 Email:</span> aswincruzo@gmail.com</div>
+      <div class="info-item"><span>🌐 LinkedIn:</span> linkedin.com/in/aswincruzo</div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form" data-aos="fade-left">
+      <h3>Send a Message</h3>
+      <form onsubmit="showSuccess(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Gmail" required />
+        <textarea rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Popup -->
+  <div id="success-popup" style="display: none;">
+    <div class="popup-box">✅ Message sent successfully!</div>
+  </div>
+
+  <!-- JS Files -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="contact-script.js"></script>
+
+</body>
+</html>
