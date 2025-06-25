@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Aswin Cruzo</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="projects-style.css" />
+</head>
+<body style="overflow: hidden;" onload="setTimeout(() => document.body.style.overflow = 'auto', 1500)">
+
+  <!-- Navbar -->
+  <div class="nav-buttons">
+    <a href="web.html" class="nav-button">HOME</a>
+    <a href="education.html" class="nav-button">EDUCATION</a>
+    <a href="skills.html" class="nav-button">SKILLS</a>
+    <a href="projects.html" class="nav-button active">PROJECTS</a>
+    <a href="contact.html" class="nav-button">CONTACT</a>
+  </div>
+
+  <!-- Heading -->
+  <h1 data-aos="fade-up">My Projects</h1>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+    <div class="project-card" data-aos="fade-up">
+      <h3>Project One</h3>
+      <p>A responsive portfolio website using HTML, CSS, and JavaScript.</p>
+      <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Project Two</h3>
+      <p>Android app that connects to Arduino via Bluetooth to control LED Matrix Clock.</p>
+      <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Project Three</h3>
+      <p>Machine learning project for image classification using Python and TensorFlow.</p>
+      <a href="#" class="btn">View</a>
+    </div>
+  </div>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="projects-script.js"></script>
+</body>
+</html>
