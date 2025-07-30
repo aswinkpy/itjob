@@ -237,26 +237,68 @@ body {
   text-shadow: 0 0 10px #00ffff;
   text-align: center;
 }
+/* Hide mobile menu icon on desktop */
+.mobile-menu-icon {
+  display: none;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
   body {
     padding: 10px;
     overflow-x: hidden;
-  }
-
-  .popup-wrapper {
-    transform: scale(1);
-  }
-
-  .intro {
-    font-size: 1.4rem;
     text-align: center;
-    margin-top: 100px;
   }
 
-  .typewriter {
-    font-size: 1.2rem;
+  /* Show 3-dot menu icon */
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #00FFFF;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* Hide nav buttons initially */
+  .nav-buttons {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  /* Show nav buttons when toggled */
+  .nav-buttons.show-menu {
+    display: flex;
+  }
+
+  .nav-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .large-circle {
+    position: static;
+    margin: 30px auto 20px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .name,
+  .description,
+  .intro,
+  .typewriter,
+  .extra-buttons,
+  .social-icons {
+    position: static;
+    margin: 10px auto;
+    max-width: 90%;
     text-align: center;
   }
 
@@ -269,30 +311,24 @@ body {
   }
 
   .description p {
-    font-size: 0.9rem;
-    max-width: 100%;
-  }
-
-  .social-icons {
-    margin-top: 20px;
-    justify-content: center;
-    gap: 15px;
+    font-size: 0.95rem;
   }
 
   .extra-buttons {
     flex-direction: column;
-    align-items: center;
     gap: 15px;
   }
 
   .extra-button {
     width: 80%;
-    text-align: center;
   }
 
   .section-title {
     font-size: 1.8rem;
-    margin-bottom: 30px;
+  }
+
+  .popup-wrapper {
+    transform: scale(1);
   }
 }
 
