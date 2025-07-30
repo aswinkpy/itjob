@@ -135,6 +135,10 @@ h1 {
   font-size: 1rem;
   text-align: center;
 }
+/* Menu always hidden on desktop */
+.mobile-menu-icon {
+  display: none;
+}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
