@@ -251,38 +251,37 @@ body {
     text-align: center;
   }
 
-  /* Show 3-dot menu icon */
- .mobile-menu-icon {
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 20px;  /* <-- changed */
-  font-size: 2rem;
-  color: #00FFFF;
-  cursor: pointer;
-  z-index: 10;
-}
-
-
+  /* Show 3-line (hamburger) menu icon */
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: #00FFFF;
+    cursor: pointer;
+    z-index: 999;
+  }
 
   /* Hide nav buttons initially */
   .nav-buttons {
     display: none;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 60px; /* add space below hamburger */
     gap: 10px;
+    transition: all 0.3s ease;
   }
 
   /* Show nav buttons when toggled */
   .nav-buttons.show-menu {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.85); /* Add dark background */
-  padding: 15px;
-  border-radius: 10px;
-  width: 90%;
-  margin: 20px auto 0;
-}
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto 0;
+  }
 
   .nav-button {
     padding: 10px 20px;
@@ -296,7 +295,6 @@ body {
     width: 220px;
     height: 220px;
   }
-
 
   .name,
   .description,
@@ -339,4 +337,3 @@ body {
     transform: scale(1);
   }
 }
-
