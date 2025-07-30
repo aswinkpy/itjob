@@ -252,16 +252,20 @@ body {
   }
 
   /* Show 3-dot menu icon */
-  .mobile-menu-icon {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
-    color: #00FFFF;
-    cursor: pointer;
-    z-index: 10;
-  }
+ .mobile-menu-icon {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;  /* <-- changed */
+  font-size: 2rem;
+  color: #00FFFF;
+  cursor: pointer;
+  z-index: 10;
+}
+.nav-buttons {
+  transition: all 0.3s ease;
+}
+
 
   /* Hide nav buttons initially */
   .nav-buttons {
