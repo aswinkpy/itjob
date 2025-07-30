@@ -23,3 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     skill.addEventListener("mouseenter", animate, { once: true });
   });
 });
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show-menu");
+  }
