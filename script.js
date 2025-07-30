@@ -30,9 +30,9 @@ window.onload = () => {
   typeWord();
   AOS.init();
 };
-function toggleMobileMenu() {
-  const menu = document.querySelector('.nav-buttons');
-  menu.classList.toggle('show-menu');
-}
+function toggleMenu() {
+    const nav = document.getElementById("navButtons");
+    nav.classList.toggle("show-menu");
+  }
 
 
