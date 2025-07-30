@@ -167,42 +167,42 @@ h1 {
     font-size: 0.9rem;
   }
 
-  /* Mobile Menu Icon */
+  /* ✅ Mobile Menu Icon */
   .mobile-menu-icon {
     display: block;
-    position: absolute;
-    top: 15px; /* adjust height here */
+    position: fixed; /* changed from absolute to fixed */
+    top: 15px;
     left: 20px;
-    font-size: 2.2rem;
+    font-size: 2.4rem; /* slightly increased */
     color: #00FFFF;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1000;
   }
 
-  /* Hide nav buttons initially */
+  /* ✅ Hide nav buttons initially */
   .nav-buttons {
     display: none;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 60px; /* more space below menu icon */
     gap: 10px;
     transition: all 0.3s ease;
   }
 
-  /* Show nav when toggled */
+  /* ✅ Show nav when toggled */
   .nav-buttons.show-menu {
     display: flex;
     background-color: rgba(0, 0, 0, 0.85);
     padding: 15px;
     border-radius: 10px;
     width: 90%;
-    margin: 20px auto 0;
+    margin: 80px auto 0; /* more top margin for spacing */
   }
 
   .nav-button {
     padding: 10px 20px;
     font-size: 1rem;
     width: 80%;
+    text-align: center;
   }
 }
-
