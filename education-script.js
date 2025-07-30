@@ -10,3 +10,6 @@ window.onload = () => {
     document.body.style.overflow = 'auto';
   }, 1500);
 };
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show-menu");
+  }
