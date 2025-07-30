@@ -274,8 +274,13 @@ body {
 
   /* Show nav buttons when toggled */
   .nav-buttons.show-menu {
-    display: flex;
-  }
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.85); /* Add dark background */
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto 0;
+}
 
   .nav-button {
     padding: 10px 20px;
@@ -283,12 +288,13 @@ body {
     width: 80%;
   }
 
-  .large-circle {
-    position: static;
-    margin: 30px auto 20px;
-    width: 220px;
-    height: 220px;
+   .large-circle {
+    order: -1; /* Move it to the top */
+    margin: 20px auto 10px; /* Add top spacing */
+    width: 180px;
+    height: 180px;
   }
+
 
   .name,
   .description,
