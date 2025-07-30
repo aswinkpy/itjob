@@ -288,11 +288,11 @@ body {
     width: 80%;
   }
 
-   .large-circle {
-    order: -1; /* Move it to the top */
-    margin: 20px auto 10px; /* Add top spacing */
-    width: 180px;
-    height: 180px;
+  .large-circle {
+    position: static;
+    margin: 30px auto 20px;
+    width: 220px;
+    height: 220px;
   }
 
 
