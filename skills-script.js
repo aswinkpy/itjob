@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 function toggleMenu() {
-    const navButtons = document.querySelector('.nav-buttons');
+    const navButtons = document.querySelector('navMenu');
     navButtons.classList.toggle('show-menu');
   }
