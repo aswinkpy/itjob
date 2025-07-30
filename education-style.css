@@ -183,25 +183,28 @@ h1 {
     text-align: center;
   }
 
+  /* Show hamburger icon */
   .mobile-menu-icon {
     display: block;
     position: absolute;
     top: 20px;
-    left: 20px; /* Position on the left */
+    left: 20px;
     font-size: 2rem;
     color: #00FFFF;
     cursor: pointer;
     z-index: 10;
   }
 
+  /* Hide nav buttons initially */
   .nav-buttons {
     display: none;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
     gap: 10px;
+    margin-top: 70px;
   }
 
+  /* Show nav when menu is toggled */
   .nav-buttons.show-menu {
     display: flex;
     background-color: rgba(0, 0, 0, 0.85);
@@ -215,25 +218,7 @@ h1 {
     padding: 10px 20px;
     font-size: 1rem;
     width: 80%;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .popup-wrapper {
-    transform: scale(1);
-  }
-
-  /* Optional: Stack timeline vertically if used */
-  .timeline {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .timeline-item {
-    width: 90%;
-    margin-bottom: 20px;
+    text-align: center;
   }
 }
 
